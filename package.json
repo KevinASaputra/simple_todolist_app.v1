@@ -1,0 +1,67 @@
+{
+  "name": "${REPO_NAME}#",
+  "version": "0.0.0",
+  "description": "${DESC}#",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#.git"
+  },
+  "scripts": {
+    "dev": "next --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "format:fix": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest watch",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "u/#{USER_OR_ORG}#",
+  "license": "MIT",
+  "keywords": [],
+  "homepage": "https://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#",
+  "dependencies": {
+    "next": "^15.3.1",
+    "next-themes": "^0.4.6",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.2",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.13.0",
+    "@tailwindcss/postcss": "^4.1.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.0.1",
+    "@types/eslint__eslintrc": "^2.1.2",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-config-next": "^15.0.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^58.0.0",
+    "jsdom": "^26.0.0",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.12.2",
+    "vitest": "^3.0.9"
+  },
+  "overrides": {
+    "eslint": "$eslint"
+  },
+  "packageManager": "bun@1.0.0"
+}
